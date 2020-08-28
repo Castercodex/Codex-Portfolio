@@ -1,0 +1,52 @@
+#contact {
+  position: relative;
+  text-align: center;
+  top: 2rem;
+
+  h2 {
+    margin-top: 4rem;
+    font-family: "Agency FB";
+    font-size: 30px;
+  }
+
+  form {
+    display: flex;
+    padding: 100px;
+    flex-flow: column;
+
+    input {
+      padding: 20px;
+    }
+
+    .btn {
+      position: relative;
+      top: 4rem;
+
+      #btn1,
+      #btn2 {
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        color: white;
+      }
+
+      #btn1 {
+        background-color: rgb(77, 77, 241);
+        border: none;
+
+        &:hover {
+          box-shadow: 1px 0px 10px 0px rgb(77, 77, 241);
+        }
+      }
+
+      #btn2 {
+        background-color: rgba(235, 67, 67, 0.959);
+        border: none;
+
+        &:hover {
+          box-shadow: 1px 0px 10px 0px rgba(235, 67, 67, 0.959);
+        }
+      }
+    }
+  }
+}

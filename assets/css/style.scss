@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rockwell, sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #e6e3e3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #776861;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: #a8a6a5;
+  }
+}
+
+@import "body";
+@import "animations";
+@import "contact";

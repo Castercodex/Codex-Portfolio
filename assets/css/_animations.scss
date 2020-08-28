@@ -1,0 +1,70 @@
+@keyframes dot {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) scale(2.5);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(100px) scale(2.5);
+  }
+  50% {
+    opacity: 0.2;
+    transform: translateY(200px) scale(2.5);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(300px) scale(2.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(500px) scale(3.5);
+  }
+}
+
+@keyframes nav {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes navEnd {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes nav_bar {
+  0% {
+    opacity: 0;
+    height: 0vh;
+  }
+  25% {
+    opacity: 0.2;
+    height: 15vh;
+  }
+  50% {
+    opacity: 0.5;
+    height: 20vh;
+  }
+  75% {
+    opacity: 0.7;
+    height: 15vh;
+  }
+  100% {
+    opacity: 1;
+    height: 10vh;
+  }
+}
+
