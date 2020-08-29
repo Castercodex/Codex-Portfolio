@@ -168,12 +168,11 @@ header {
     padding: 200px;
     padding-bottom: 50px;
     font-size: 30px;
-
   }
 
   p {
     font-weight: lighter;
-    width: 40%;
+    width: 100%;
     padding-left: 80px;
 
     .name {
@@ -190,7 +189,6 @@ header {
     padding-top: 30px;
     padding-left: 100px;
     grid-gap: 20px;
-   
 
     .img {
       overflow: hidden;

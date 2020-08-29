@@ -242,7 +242,7 @@ header nav .nav-link:hover {
 
 .about p {
   font-weight: lighter;
-  width: 40%;
+  width: 100%;
   padding-left: 80px;
 }
 
@@ -610,5 +610,84 @@ header nav .nav-link:hover {
 #contact form .btn #btn2:hover {
   -webkit-box-shadow: 1px 0px 10px 0px rgba(235, 67, 67, 0.959);
           box-shadow: 1px 0px 10px 0px rgba(235, 67, 67, 0.959);
+}
+
+@media screen and (max-width: 800px) {
+  .introduction {
+    background-image: url(../img/new.png);
+    background-size: contain;
+  }
+  .introduction .intro-text {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .introduction .intro-text .greeting h5 {
+    font-size: 10px;
+  }
+  .introduction .intro-text .main-intro {
+    padding-top: 0px;
+  }
+  .introduction .intro-text .main-intro h1 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .introduction .intro-text .main-intro p {
+    font-size: 10px;
+  }
+  .introduction .intro-text .main-intro .btn {
+    top: 5px;
+  }
+  .introduction .intro-text .main-intro .btn button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .about {
+    height: 100vh;
+    width: 100%;
+  }
+  .about h1 {
+    padding-top: 60px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  #about-para {
+    position: relative;
+    top: 100px;
+    left: -50px;
+    font-size: 15px;
+  }
+  .box {
+    position: relative;
+    top: 80px;
+    left: -80px;
+  }
+  .projects .box {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .projects .box .card .img {
+    overflow: hidden;
+  }
+  .projects .box .card .img img {
+    height: 100%;
+    width: 100%;
+  }
+  .projects .box .card .card-text:hover {
+    height: 80vh;
+  }
+  .projects .box .card .card-text:hover h3 {
+    padding-top: 300px;
+  }
+  .projects .box .card .card-text:hover .git img {
+    height: 100%;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
