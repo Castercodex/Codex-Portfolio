@@ -681,8 +681,10 @@ header nav .nav-link:hover {
   }
   .projects .box .card {
     position: relative;
-    left: 50%;
     top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .projects .box .card .card-img {
     overflow: hidden;
@@ -690,6 +692,9 @@ header nav .nav-link:hover {
   .projects .box .card .card-img img {
     height: 100%;
     width: 100%;
+  }
+  .projects .box .card .card-text {
+    width: 400px;
   }
   .projects .box .card .card-text:hover {
     height: 80vh;

@@ -1,5 +1,4 @@
 @media screen and (max-width: 800px) {
-
   .introduction {
     background-image: url(../img/new.png);
     background-size: contain;
@@ -50,16 +49,16 @@
     top: 100px;
     left: -50px;
     font-size: 15px;
-    &::after{
-        content: "HTML, SASS, JAVASCRIPT, CSS, LESS, GIT, and Python";
+    &::after {
+      content: "HTML, SASS, JAVASCRIPT, CSS, LESS, GIT, and Python";
     }
   }
   .box {
     position: relative;
     top: 80px;
     left: -80px;
-    .img{
-        display: none;
+    .img {
+      display: none;
     }
   }
 
@@ -68,11 +67,12 @@
       grid-template-columns: repeat(1, 1fr);
       width: 100%;
       .card {
-        position: relative;
-        left: 50%;
-        top:50%;
-        
+       position: relative;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
         .card-img {
+
           overflow: hidden;
           img {
             height: 100%;
@@ -81,6 +81,7 @@
         }
 
         .card-text {
+            width: 400px;
           &:hover {
             h3 {
               padding-top: 300px;
