@@ -676,8 +676,8 @@ header nav .nav-link:hover {
     overflow: hidden;
   }
   .projects .box .card .img img {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 300px;
   }
   .projects .box .card .card-text:hover {
     height: 80vh;
