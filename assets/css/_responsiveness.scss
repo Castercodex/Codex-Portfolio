@@ -66,12 +66,10 @@
   .projects {
     .box {
       grid-template-columns: repeat(1, 1fr);
+      padding-left: 140px;
       width: 100%;
       .card {
-       position: relative;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%,-50%);
+       
         .card-img {
 
           overflow: hidden;

@@ -678,14 +678,8 @@ header nav .nav-link:hover {
   .projects .box {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    padding-left: 140px;
     width: 100%;
-  }
-  .projects .box .card {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
   .projects .box .card .card-img {
     overflow: hidden;
