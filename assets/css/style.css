@@ -658,6 +658,7 @@ header nav .nav-link:hover {
     text-align: center;
   }
   #about-para {
+    background-color: rgba(255, 255, 255, 0.801);
     position: relative;
     top: 100px;
     left: -50px;
