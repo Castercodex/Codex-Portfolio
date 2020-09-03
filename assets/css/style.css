@@ -28,6 +28,7 @@ header {
   position: absolute;
   top: 10px;
   width: 100%;
+  z-index: 5;
 }
 
 header .nav {
@@ -270,6 +271,19 @@ header nav .nav-link:hover {
 }
 
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   text-align: center;
 }
 
@@ -278,9 +292,12 @@ header nav .nav-link:hover {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  padding: 100px;
-  width: 100%;
+  margin: 100px 100px 0px 100px;
   grid-gap: 30px;
+}
+
+.projects .box .card {
+  height: 50vh;
 }
 
 .projects .box .card .card-img {
@@ -290,16 +307,14 @@ header nav .nav-link:hover {
 .projects .box .card .card-img img {
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: 0px 1px 10px 0px #414040;
-          box-shadow: 0px 1px 10px 0px #414040;
   opacity: 1;
 }
 
 .projects .box .card .card-text {
   background-color: rgba(255, 250, 250, 0.116);
-  height: 30vh;
-  -webkit-transform: translateY(-280px);
-          transform: translateY(-280px);
+  height: 50vh;
+  -webkit-transform: translateY(-170px);
+          transform: translateY(-170px);
   -webkit-transition: 0.6s linear;
   transition: 0.6s linear;
   z-index: -2;
@@ -313,17 +328,14 @@ header nav .nav-link:hover {
 }
 
 .projects .box .card .card-text:hover {
-  height: 70vh;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(5%, #ffffff), color-stop(10%, #ffffff), color-stop(20%, #ffffff), color-stop(40%, #ffffff00), color-stop(70%, #f7696900), color-stop(80%, #f7696900), to(#00000000));
   background: linear-gradient(to top, #ffffff 0%, #ffffff 5%, #ffffff 10%, #ffffff 20%, #ffffff00 40%, #f7696900 70%, #f7696900 80%, #00000000 100%);
   opacity: 1;
   z-index: 2;
-  -webkit-box-shadow: 0px 1px 10px 0px #414040;
-          box-shadow: 0px 1px 10px 0px #414040;
 }
 
 .projects .box .card .card-text:hover h3 {
-  padding-top: 300px;
+  padding-top: 180px;
 }
 
 .projects .box .card .card-text #link-box {
@@ -366,7 +378,7 @@ header nav .nav-link:hover {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,6 +625,23 @@ header nav .nav-link:hover {
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    z-index: 5;
+    background: #fff;
+  }
   .introduction {
     background-image: url(../img/new.png);
     background-size: contain;
@@ -675,31 +704,110 @@ header nav .nav-link:hover {
   .box .img {
     display: none;
   }
+  .projects {
+    width: 100%;
+  }
   .projects .box {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding-left: 140px;
+    margin-left: 50%;
+    grid-gap: 1px;
+  }
+  .projects .box .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 100%;
+    height: 38vh;
   }
   .projects .box .card .card-img {
-    overflow: hidden;
+    overflow: visible;
   }
   .projects .box .card .card-img img {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 300px;
   }
   .projects .box .card .card-text {
-    width: 400px;
+    position: absolute;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    background: #fff;
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    opacity: 0;
+  }
+  .projects .box .card .card-text p {
+    position: relative;
+    top: 50%;
+    font-size: 10px;
+  }
+  .projects .box .card .card-text h3 {
+    position: relative;
+    top: 50%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15px;
   }
   .projects .box .card .card-text:hover {
-    height: 80vh;
+    opacity: 1;
+    z-index: -5;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.623);
+    opacity: 1;
+    z-index: 2;
+    -webkit-box-shadow: 0 1px 10px 0 #414040;
+            box-shadow: 0 1px 10px 0 #414040;
   }
   .projects .box .card .card-text:hover h3 {
-    padding-top: 300px;
+    padding-top: 0;
   }
-  .projects .box .card .card-text:hover .git img {
-    height: 100%;
-    width: 100%;
+  .projects .box .card .card-text #link-box {
+    position: relative;
+    top: 50%;
   }
+  .projects .box .card .card-text #link-box .git img {
+    height: 80%;
+    width: 80%;
+  }
+  .projects .box .card .card-text #link-box .btn button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+#contact {
+  height: auto;
+}
+
+#contact form {
+  padding: 20px;
+}
+
+#contact input {
+  padding: 0;
+}
+
+.footer {
+  top: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
