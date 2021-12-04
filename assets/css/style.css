@@ -620,4 +620,10 @@ header nav .nav-link:hover {
 .footer {
   top: 6rem;
 }
+
+@media screen and (max-width: 500px) {
+  .projects {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
