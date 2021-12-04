@@ -623,7 +623,12 @@ header nav .nav-link:hover {
 
 @media screen and (max-width: 500px) {
   .projects {
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 0;
+  }
+  .projects .box {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
