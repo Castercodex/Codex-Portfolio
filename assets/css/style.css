@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Rockwell, sans-serif;
   scroll-behavior: smooth;
 }
@@ -39,31 +38,19 @@ header .nav {
   min-height: 10vh;
   z-index: 1;
   top: 0px;
-  -webkit-animation: nav_bar 0.7s linear;
-          animation: nav_bar 0.7s linear;
+  animation: nav_bar 0.7s linear;
 }
 
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header nav .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav .logo h4 {
@@ -75,13 +62,11 @@ header nav .logo h4 {
 }
 
 header nav .nav-link {
-  -webkit-animation: navEnd 0.3s linear;
-          animation: navEnd 0.3s linear;
+  animation: navEnd 0.3s linear;
 }
 
 header nav .nav-link:hover {
-  -webkit-animation: nav 1s linear;
-          animation: nav 1s linear;
+  animation: nav 1s linear;
 }
 
 .introduction {
@@ -92,59 +77,42 @@ header nav .nav-link:hover {
 }
 
 .introduction .dot-anim {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   z-index: -1;
 }
 
 .introduction .dot-anim .dot {
-  -webkit-animation: dot 2.5s infinite linear;
-          animation: dot 2.5s infinite linear;
+  animation: dot 2.5s infinite linear;
   opacity: 0;
 }
 
 .introduction .dot-anim .dot2 {
-  -webkit-animation: dot 2s infinite linear;
-          animation: dot 2s infinite linear;
+  animation: dot 2s infinite linear;
   opacity: 0;
 }
 
 .introduction .dot-anim .dot3 {
-  -webkit-animation: dot 4s infinite linear;
-          animation: dot 4s infinite linear;
+  animation: dot 4s infinite linear;
   opacity: 0;
 }
 
 .introduction .dot-anim .dot4 {
-  -webkit-animation: dot 5s infinite linear;
-          animation: dot 5s infinite linear;
+  animation: dot 5s infinite linear;
   opacity: 0;
 }
 
 .introduction .dot-anim .dot5 {
-  -webkit-animation: dot 6s infinite linear;
-          animation: dot 6s infinite linear;
+  animation: dot 6s infinite linear;
   opacity: 0;
 }
 
 .introduction .intro-text {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column;
+  justify-content: center;
   top: 35%;
   left: 50%;
   text-align: center;
@@ -192,25 +160,17 @@ header nav .nav-link:hover {
   border: none;
   cursor: pointer;
   border-radius: 3px;
-  -webkit-transition: 0.6s linear;
   transition: 0.6s linear;
 }
 
 .introduction .intro-text .main-intro .btn button:hover {
-  -webkit-box-shadow: 0px 1px 10px 0px #776861;
-          box-shadow: 0px 1px 10px 0px #776861;
+  box-shadow: 0px 1px 10px 0px #776861;
 }
 
 .introduction .intro-text .greeting {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .introduction .intro-text .greeting h5 {
@@ -229,7 +189,6 @@ header nav .nav-link:hover {
 
 .about {
   height: 80vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(20%, #ffffff), color-stop(40%, #ffffff), color-stop(70%, #f76969ab), color-stop(80%, #f76969), to(#f76969)), #ffffff;
   background: linear-gradient(to top, #ffffff 0%, #ffffff 20%, #ffffff 40%, #f76969ab 70%, #f76969 80%, #f76969 100%), #ffffff;
   background-size: cover;
 }
@@ -257,10 +216,8 @@ header nav .nav-link:hover {
 }
 
 .about .box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (60px)[4];
-      grid-template-columns: repeat(4, 60px);
+  grid-template-columns: repeat(4, 60px);
   padding-top: 30px;
   padding-left: 100px;
   grid-gap: 20px;
@@ -271,27 +228,17 @@ header nav .nav-link:hover {
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   text-align: center;
 }
 
 .projects .box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 100px 100px 0px 100px;
   grid-gap: 30px;
 }
@@ -313,9 +260,7 @@ header nav .nav-link:hover {
 .projects .box .card .card-text {
   background-color: rgba(255, 250, 250, 0.116);
   height: 50vh;
-  -webkit-transform: translateY(-170px);
-          transform: translateY(-170px);
-  -webkit-transition: 0.6s linear;
+  transform: translateY(-170px);
   transition: 0.6s linear;
   z-index: -2;
   opacity: 0;
@@ -323,12 +268,10 @@ header nav .nav-link:hover {
 
 .projects .box .card .card-text h3 {
   padding-top: 160px;
-  -webkit-transition: 0.6s linear;
   transition: 0.6s linear;
 }
 
 .projects .box .card .card-text:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(5%, #ffffff), color-stop(10%, #ffffff), color-stop(20%, #ffffff), color-stop(40%, #ffffff00), color-stop(70%, #f7696900), color-stop(80%, #f7696900), to(#00000000));
   background: linear-gradient(to top, #ffffff 0%, #ffffff 5%, #ffffff 10%, #ffffff 20%, #ffffff00 40%, #f7696900 70%, #f7696900 80%, #00000000 100%);
   opacity: 1;
   z-index: 2;
@@ -340,14 +283,9 @@ header nav .nav-link:hover {
 
 .projects .box .card .card-text #link-box {
   padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .projects .box .card .card-text #link-box .btn button {
@@ -357,15 +295,12 @@ header nav .nav-link:hover {
   width: 100px;
   border: none;
   cursor: pointer;
-  -webkit-box-shadow: 0px 1px 10px 0px #414040;
-          box-shadow: 0px 1px 10px 0px #414040;
-  -webkit-transition: 0.3s linear;
+  box-shadow: 0px 1px 10px 0px #414040;
   transition: 0.3s linear;
 }
 
 .projects .box .card .card-text #link-box .btn button:hover {
-  -webkit-transform: scaleX(1.2);
-          transform: scaleX(1.2);
+  transform: scaleX(1.2);
 }
 
 .projects .box .card .card-text #link-box .git img {
@@ -373,25 +308,15 @@ header nav .nav-link:hover {
 }
 
 .projects .box .card .card-text #link-box .git img:hover {
-  -webkit-animation: nav 0.8s linear;
-          animation: nav 0.8s linear;
+  animation: nav 0.8s linear;
 }
 
 .footer {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   height: 10vh;
   color: white;
   background-color: #414040;
@@ -402,142 +327,50 @@ header nav .nav-link:hover {
   color: #ff0000;
 }
 
-@-webkit-keyframes dot {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.2) scale(2.5);
-            transform: scale(0.2) scale(2.5);
-  }
-  25% {
-    opacity: 1;
-    -webkit-transform: translateY(100px) scale(2.5);
-            transform: translateY(100px) scale(2.5);
-  }
-  50% {
-    opacity: 0.2;
-    -webkit-transform: translateY(200px) scale(2.5);
-            transform: translateY(200px) scale(2.5);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: translateY(300px) scale(2.5);
-            transform: translateY(300px) scale(2.5);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(500px) scale(3.5);
-            transform: translateY(500px) scale(3.5);
-  }
-}
-
 @keyframes dot {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.2) scale(2.5);
-            transform: scale(0.2) scale(2.5);
+    transform: scale(0.2) scale(2.5);
   }
   25% {
     opacity: 1;
-    -webkit-transform: translateY(100px) scale(2.5);
-            transform: translateY(100px) scale(2.5);
+    transform: translateY(100px) scale(2.5);
   }
   50% {
     opacity: 0.2;
-    -webkit-transform: translateY(200px) scale(2.5);
-            transform: translateY(200px) scale(2.5);
+    transform: translateY(200px) scale(2.5);
   }
   75% {
     opacity: 1;
-    -webkit-transform: translateY(300px) scale(2.5);
-            transform: translateY(300px) scale(2.5);
+    transform: translateY(300px) scale(2.5);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(500px) scale(3.5);
-            transform: translateY(500px) scale(3.5);
-  }
-}
-
-@-webkit-keyframes nav {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: translateY(500px) scale(3.5);
   }
 }
 
 @keyframes nav {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes navEnd {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes navEnd {
   0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@-webkit-keyframes nav_bar {
-  0% {
-    opacity: 0;
-    height: 0vh;
-  }
-  25% {
-    opacity: 0.2;
-    height: 15vh;
-  }
-  50% {
-    opacity: 0.5;
-    height: 20vh;
-  }
-  75% {
-    opacity: 0.7;
-    height: 15vh;
-  }
-  100% {
-    opacity: 1;
-    height: 10vh;
+    transform: rotate(0deg);
   }
 }
 
@@ -577,14 +410,9 @@ header nav .nav-link:hover {
 }
 
 #contact form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 100px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 
 #contact form input {
@@ -610,8 +438,7 @@ header nav .nav-link:hover {
 }
 
 #contact form .btn #btn1:hover {
-  -webkit-box-shadow: 1px 0px 10px 0px #4d4df1;
-          box-shadow: 1px 0px 10px 0px #4d4df1;
+  box-shadow: 1px 0px 10px 0px #4d4df1;
 }
 
 #contact form .btn #btn2 {
@@ -620,24 +447,17 @@ header nav .nav-link:hover {
 }
 
 #contact form .btn #btn2:hover {
-  -webkit-box-shadow: 1px 0px 10px 0px rgba(235, 67, 67, 0.959);
-          box-shadow: 1px 0px 10px 0px rgba(235, 67, 67, 0.959);
+  box-shadow: 1px 0px 10px 0px rgba(235, 67, 67, 0.959);
 }
 
 @media screen and (max-width: 800px) {
   header {
-    position: -webkit-sticky;
     position: sticky;
     width: 100%;
     top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     height: 10vh;
     z-index: 5;
     background: #fff;
@@ -649,8 +469,7 @@ header nav .nav-link:hover {
   .introduction .intro-text {
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .introduction .intro-text .greeting h5 {
     font-size: 10px;
@@ -705,38 +524,39 @@ header nav .nav-link:hover {
     display: none;
   }
   .projects {
+    padding: 10%;
     width: 100%;
   }
   .projects .box {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    margin-left: 50%;
-    grid-gap: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .projects .box .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 38vh;
+    margin-left: 35%;
   }
   .projects .box .card .card-img {
     overflow: visible;
+    height: 40vh;
+    width: 100%;
   }
   .projects .box .card .card-img img {
-    height: 200px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
   }
   .projects .box .card .card-text {
     position: absolute;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
     background: #fff;
     width: 100%;
     height: 200px;
@@ -752,19 +572,10 @@ header nav .nav-link:hover {
     position: relative;
     top: 50%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
   }
   .projects .box .card .card-text:hover {
@@ -774,8 +585,7 @@ header nav .nav-link:hover {
     background: rgba(255, 255, 255, 0.623);
     opacity: 1;
     z-index: 2;
-    -webkit-box-shadow: 0 1px 10px 0 #414040;
-            box-shadow: 0 1px 10px 0 #414040;
+    box-shadow: 0 1px 10px 0 #414040;
   }
   .projects .box .card .card-text:hover h3 {
     padding-top: 0;
